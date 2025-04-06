@@ -5,22 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>NewsApp</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=newspaper" />
 </head>
 <body>
     <nav>
         <div class="navbar container flex">
             <div id="logo">
                 <a href="#">
-                    <img src="codingsimplified.PNG" >
+                    <span class="material-symbols-outlined">
+                        newspaper
+                    </span>
                 </a>
-                <h1 id="header">codingsimplified</h1>
+                <h1 id="header">NewsApp</h1>
             </div>
             <div id="topics">
                 <ul>
-                    <li id="IPL"><a class="nav-item" href="#" id="ipl" onClick = "onNavItemCLick('ipl')">IPL</a></li>
-                    <li id="Finance"><a class="nav-item" href="#" id="finance" onClick = "onNavItemCLick('finance')">Finance</a></li>
-                    <li id="Politics"><a class="nav-item" href="#" id="politics" onClick = "onNavItemCLick('politics')">Politics</a></li>
-                    <li id="Technology"><a class="nav-item" href="#" id="technology" onClick = "onNavItemCLick('technology')">Technology</a></li>
+                    <li id="IPL"><a class="nav-item" href="#" id="ipl" onClick="onNavItemCLick('ipl')">IPL</a></li>
+                    <li id="Finance"><a class="nav-item" href="#" id="finance" onClick="onNavItemCLick('finance')">Finance</a></li>
+                    <li id="Politics"><a class="nav-item" href="#" id="politics" onClick="onNavItemCLick('politics')">Politics</a></li>
+                    <li id="Technology"><a class="nav-item" href="#" id="technology" onClick="onNavItemCLick('technology')">Technology</a></li>
+                    <li  id="about_me"><a href="./Aboutme.html">About me</a></li>
                 </ul>
             </div>
             <div id="search">
@@ -32,23 +37,52 @@
 
     <main>
         <div class="cards-container container flex" id="cards-container">
-           
-            
         </div>
     </main>
 
     <template id="template-news-card">
         <div class="card">
+
             <div class="card-header">
                 <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
             </div>
+
             <div class="card-content">
-                <h3 id="news-title">This is the title</h2>
+                <h3 id="news-title">This is the title</h3>
                 <h6 class="news-source" id="news-source">End Gadget 25/03/2024</h6>
                 <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, eius? Eos inventore earum nesciunt ullam ipsa itaque cum, officiis, ut nihil non eligendi suscipit quo quos qui laboriosam pariatur dolorem.</p>
             </div>
+
+            <div class="see_more_btn_container">
+               
+                <button class="see_more_button">see more </button>
+            </div>
         </div>
     </template>
+
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-top flex">
+                <div class="footer-logo">
+                    <span class="material-symbols-outlined">newspaper</span>
+                    <h3>NewsApp</h3>
+                </div>
+                <div class="footer-links">
+                    <ul class="flex">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./Aboutme.html">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Stay informed with the latest news across various categories. NewsApp brings you reliable and timely updates.</p>
+                <p class="copyright">&copy; 2024 NewsApp. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="script.js"></script>
