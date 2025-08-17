@@ -72,3 +72,4 @@ searchButton.addEventListener('click', () => {
     fetchNews(input);
 });
 
+
